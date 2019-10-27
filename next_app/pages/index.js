@@ -1,8 +1,16 @@
-function Index () {
+import Link from 'next/link'
+import Layout from '../components/Layout';
+
+function Index() {
     return (
         <div>
-            <h1>Next.js</h1>
-            <div>Welcome to next.js</div>
+            <Layout header="Next" title="Top page.">
+                <p>Welcome to next.js!</p>
+                <hr />
+                <Link href="./other">
+                    <button>go to Other &gt;&gt;</button>
+                </Link>
+            </Layout>
         </div>
     )
 }
